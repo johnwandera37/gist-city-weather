@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Javascript Exam 1</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+      html,body{
+            place-items: center;
+            display: grid;
+            height: 100%;
+            text-align: justify;
+        }
+        .bigContainer{
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+          border-radius: 20px;
+          width: 450px;
+          height: 479px;
+          background-color:aliceblue;
+          
+        }
+        h1{
+          margin-top: -3px;
+          text-align: center;
+          font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        .LED{
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+          border-radius: 20px;
+          width: 450px;
+          background-color: #fff;
+          height: 90px;
+        }
+      .circle {
+        height: 10%;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        padding: 6px 0;
+        font-size: 12px;
+        line-height: 1.428571429;
+        border-radius: 15px;
+        background-color: LightGray;
+        float: left;
+        margin: 5px;
+      }
+      .center {
+        margin-top: -17px;
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        padding: 15px;
+        width: 450px;
+        height: 220px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      } 
+      .display{
+        margin-top: 3px;
+        background-color: #fff;
+        text-align:justify;
+        font-size: small;
+        color: cadetblue;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        text-align: center;
+        width: 450px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bigContainer">
+      
+    <div style="height:3px; clear:both"></div>
+   <div class="LED">
+    <h1 style="color:darkcyan;">Weather Forecast</h1>
+    <div id="bit7" type="div" class="bitbtn circle"></div>
+    <div id="bit6" type="div" class="bitbtn circle"></div>
+    <div id="bit5" type="div" class="bitbtn circle"></div>
+    <div id="bit4" type="div" class="bitbtn circle"></div>
+    <div id="bit3" type="div" class="bitbtn circle"></div>
+    <div id="bit2" type="div" class="bitbtn circle"></div>
+    <div id="bit1" type="div" class="bitbtn circle"></div>
+    <div id="bit0" type="div" class="bitbtn circle"></div>
+   </div>
+     
+   <br>
+    <div class="center">
+      <div style="height:5px; clear:both"></div>
+      <div style="font-size: 19px; font-weight:600; font-family: monospace;">
+        Type a city name on the keyboard to see<br>
+        weather details.<br>
+        Press GO to send the entire sequence.<br>
+        <form>
+          <input id="keyboard" style="width: 80%; font-size: 17px;" placeholder="Enter city name"></input>
+          <button id="go" class="btn btn-primary">Go</button>
+        </form>
+      </div>
+
+      <br>
+      <div>
+        <p class="showText" style="background-color: #fff; box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); width: 350px;  border-radius: 20px; text-align: center; margin-left: 9%;"></p>
+      </div>
+
+    </div>
+
+    <div class="display" >
+      <h4 class="name"></h4>
+      <p class="temp"></p>
+      <p class="humidity"></p>
+      <p class="weather"></p>
+      <p class="country"></p> 
+    </div>
+    
+
+    </div>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
